@@ -1,0 +1,4 @@
+#Tue Oct 10 14:52:17 JST 2023
+base.0=/Users/bunchou/Documents/Unity/obstacle game_01_Start/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/build/intermediates/dex/release/mergeDexRelease/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

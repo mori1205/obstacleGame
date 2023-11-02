@@ -1,0 +1,16 @@
+<dependencies>
+  <compile
+      roots="/Users/bunchou/Documents/Unity/obstacle game_01_Start/Library/Bee/Android/Prj/IL2CPP/Gradle@@:unityLibrary::release">
+    <dependency
+        name="/Users/bunchou/Documents/Unity/obstacle game_01_Start/Library/Bee/Android/Prj/IL2CPP/Gradle@@:unityLibrary::release"
+        simpleName="Gradle:unityLibrary"/>
+  </compile>
+  <package
+      roots="/Users/bunchou/Documents/Unity/obstacle game_01_Start/Library/Bee/Android/Prj/IL2CPP/Gradle@@:unityLibrary::release,__local_aars__:/Users/bunchou/Documents/Unity/obstacle game_01_Start/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/libs/unity-classes.jar:unspecified@jar">
+    <dependency
+        name="/Users/bunchou/Documents/Unity/obstacle game_01_Start/Library/Bee/Android/Prj/IL2CPP/Gradle@@:unityLibrary::release"
+        simpleName="Gradle:unityLibrary"/>
+    <dependency
+        name="__local_aars__:/Users/bunchou/Documents/Unity/obstacle game_01_Start/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/libs/unity-classes.jar:unspecified@jar"/>
+  </package>
+</dependencies>
