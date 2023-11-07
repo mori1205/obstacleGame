@@ -22,7 +22,7 @@
 <body>
   <!-- 追加 -->
   <h3>TMUnity</h3>
-  <input type="button" value="jump" onclick="onClick()" />
+  <input type="button" value="ボタン" onclick="onClick()" />
   <!--  -->
 
   <!-- TM -->
@@ -122,6 +122,7 @@
 
     loadingBar.style.display = "block";
 
+    var gameInstance;
     var script = document.createElement("script");
     script.src = loaderUrl;
     script.onload = () => {
@@ -144,18 +145,19 @@
     // ここから自分で書いている
     function onClick() {
       // UnityのPlayer GameObjectにアタッチされたスクリプトのStartJumpメソッドを呼び出す
-      gameInstance.SendMessage('unitychan_dynamic', 'Update');
+      gameInstance.SendMessage('unitychan_dynamic', 'PerformJump');
     }
 
     // TM実装
     let model, webcam, labelContainer, maxPredictions;
-    var motor;
+    var motor01;
+    var motor02;
     var button;
     var pressed;
     var count = 0; //一定時間に目を開いた回数
     let average = 0; //目を開いた確率
     // var data = []; //openクラスの値を入れる
-    var obniz = new Obniz("0777-7636");
+    var obniz = new Obniz("4950-9121");
     var isMoterMoving = false; //モーターを動かさない
     var flag = false; //フラグ
     // var youtubeVideoID = "oelvJxZnWtc";
@@ -166,9 +168,11 @@
     var go_sec = Math.floor(Math.random() * (21 - 11) + 10) * 1000; //秒数
 
     obniz.onconnect = async function () {
-      motor = obniz.wired("DCMotor", { forward: 4, back: 8 });
       button = obniz.wired("Button", { signal: 0, gnd: 2 });
-      motor.power(100); // 25
+      motor01 = obniz.wired("DCMotor", { forward: 4, back: 6 });
+      motor02 = obniz.wired("DCMotor", { forward: 8, back: 10 });
+      motor01.power(50); // 25
+      motor02.power(50);
 
       // 準備ボタン
       // 一瞬動画を開始してすぐに止める
@@ -295,7 +299,7 @@
       }
       // ringBuffer[currentIndex] = prediction[1].probability;
       // console("prediciont " + prediction[1].probability);
-      console.log("addToRing");
+      // console.log("addToRing");
       addToRingBuffer(prediction[1].probability);
     }
 
@@ -308,10 +312,12 @@
 
       if (isMoterMoving == false) {
         // console.log("eyedetect");
-        motor.forward();
+        motor01.forward();
+        motor02.forward();
         isMoterMoving = true;
         setTimeout(function () {
-          motor.stop();
+          motor01.stop();
+          motor02.stop();
           webcam.stop();
           // isMoterMoving = false;
           player.stopVideo();
