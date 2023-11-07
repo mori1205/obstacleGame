@@ -52,7 +52,7 @@ public class Run_and_Jump : MonoBehaviour
         // }
     }
 
-    void PerformJump()
+    public void PerformJump()
     {
 
          if (!animator.GetBool("isJump")) // ジャンプ中でなければジャンプを実行
