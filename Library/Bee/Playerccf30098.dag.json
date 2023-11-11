@@ -325,7 +325,8 @@
         317,
         318,
         319,
-        320
+        320,
+        321
       ],
       "OverwriteOutputs": false,
       "DebugActionIndex": 0
@@ -13991,7 +13992,7 @@
     {
       "Annotation": "PreprocessJS WebGL_Build/Build/WebGL_Build.loader.js",
       "DisplayName": "PreprocessJS WebGL_Build.loader",
-      "Action": "cd \"/Applications/Unity/Hub/Editor/2022.3.10f1/PlaybackEngines/WebGLSupport/BuildTools\" && \"/Applications/Unity/Hub/Editor/2022.3.10f1/PlaybackEngines/WebGLSupport/BuildTools/Emscripten/node/node\" \"/Applications/Unity/Hub/Editor/2022.3.10f1/PlaybackEngines/WebGLSupport/BuildTools/Preprocess.js\"  \"locals.cwd='/Applications/Unity/Hub/Editor/2022.3.10f1/PlaybackEngines/WebGLSupport/BuildTools'\"  \"locals.inputPath='UnityLoader/UnityLoader.js'\"  \"locals.outputPath='/Users/bunchou/Documents/Unity/obstacle game\\x5f01\\x5fStart/WebGL\\x5fBuild/Build/WebGL\\x5fBuild.loader.js'\"  \"locals.webglIncludes='/Applications/Unity/Hub/Editor/2022.3.10f1/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/WebGLIncludes'\"  \"locals.minifyOutput=true\"  \"COMPANY_NAME='DefaultCompany'\" \"PRODUCT_NAME='obstacle game\\x5f01\\x5fStart'\" \"PRODUCT_VERSION='0.1'\" \"WIDTH=960\" \"HEIGHT=600\" \"SPLASH_SCREEN_STYLE='Dark'\" \"BACKGROUND_COLOR='\\x23231F20'\" \"DATA_FILENAME='WebGL\\x5fBuild.data.unityweb'\" \"FRAMEWORK_FILENAME='WebGL\\x5fBuild.framework.js.unityweb'\" \"WORKER_FILENAME=''\" \"CODE_FILENAME='WebGL\\x5fBuild.wasm.unityweb'\" \"MEMORY_FILENAME=''\" \"SYMBOLS_FILENAME=''\" \"BACKGROUND_FILENAME=''\" \"USE_WASM=true\" \"USE_THREADS=false\" \"USE_WEBGL_1_0=false\" \"USE_WEBGL_2_0=true\" \"WEBGL_POWER_PREFERENCE=2\" \"USE_DATA_CACHING=true\" \"DECOMPRESSION_FALLBACK='Gzip'\" \"DEVELOPMENT_PLAYER=false\" \"UNITY_VERSION='2022.3.10f1'\" \"SHOW_DIAGNOSTICS=false\" \"CLOSE_ON_QUIT=false\" \"LOADER_FILENAME='WebGL\\x5fBuild.loader.js'\"",
+      "Action": "cd \"/Applications/Unity/Hub/Editor/2022.3.10f1/PlaybackEngines/WebGLSupport/BuildTools\" && \"/Applications/Unity/Hub/Editor/2022.3.10f1/PlaybackEngines/WebGLSupport/BuildTools/Emscripten/node/node\" \"/Applications/Unity/Hub/Editor/2022.3.10f1/PlaybackEngines/WebGLSupport/BuildTools/Preprocess.js\"  \"locals.cwd='/Applications/Unity/Hub/Editor/2022.3.10f1/PlaybackEngines/WebGLSupport/BuildTools'\"  \"locals.inputPath='UnityLoader/UnityLoader.js'\"  \"locals.outputPath='/Users/bunchou/Documents/Unity/obstacle game\\x5f01\\x5fStart/WebGL\\x5fBuild/Build/WebGL\\x5fBuild.loader.js'\"  \"locals.webglIncludes='/Applications/Unity/Hub/Editor/2022.3.10f1/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/WebGLIncludes'\"  \"locals.minifyOutput=true\"  \"COMPANY_NAME='DefaultCompany'\" \"PRODUCT_NAME='obstacle game\\x5f01\\x5fStart'\" \"PRODUCT_VERSION='0.1'\" \"WIDTH=400\" \"HEIGHT=250\" \"SPLASH_SCREEN_STYLE='Dark'\" \"BACKGROUND_COLOR='\\x23231F20'\" \"DATA_FILENAME='WebGL\\x5fBuild.data.unityweb'\" \"FRAMEWORK_FILENAME='WebGL\\x5fBuild.framework.js.unityweb'\" \"WORKER_FILENAME=''\" \"CODE_FILENAME='WebGL\\x5fBuild.wasm.unityweb'\" \"MEMORY_FILENAME=''\" \"SYMBOLS_FILENAME=''\" \"BACKGROUND_FILENAME=''\" \"USE_WASM=true\" \"USE_THREADS=false\" \"USE_WEBGL_1_0=false\" \"USE_WEBGL_2_0=true\" \"WEBGL_POWER_PREFERENCE=2\" \"USE_DATA_CACHING=true\" \"DECOMPRESSION_FALLBACK='Gzip'\" \"DEVELOPMENT_PLAYER=false\" \"UNITY_VERSION='2022.3.10f1'\" \"SHOW_DIAGNOSTICS=false\" \"CLOSE_ON_QUIT=false\" \"PRODUCT_DESCRIPTION=''\" \"LOADER_FILENAME='WebGL\\x5fBuild.loader.js'\"",
       "Inputs": [
         "UnityLoader/UnityLoader.js"
       ],
@@ -14003,164 +14004,176 @@
       "DebugActionIndex": 306
     },
     {
+      "Annotation": "CopyFiles WebGL_Build/.DS_Store",
+      "DisplayName": "Copying .DS_Store",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "/Users/bunchou/Documents/Unity/obstacle game_01_Start/Assets/WebGLTemplates/NewTemplates/.DS_Store"
+      ],
+      "Outputs": [
+        "WebGL_Build/.DS_Store"
+      ],
+      "DebugActionIndex": 307
+    },
+    {
       "Annotation": "PreprocessJS WebGL_Build/index.html",
       "DisplayName": "PreprocessJS index",
-      "Action": "cd \"/Applications/Unity/Hub/Editor/2022.3.10f1/PlaybackEngines/WebGLSupport/BuildTools\" && \"/Applications/Unity/Hub/Editor/2022.3.10f1/PlaybackEngines/WebGLSupport/BuildTools/Emscripten/node/node\" \"/Applications/Unity/Hub/Editor/2022.3.10f1/PlaybackEngines/WebGLSupport/BuildTools/Preprocess.js\"  \"locals.cwd='/Applications/Unity/Hub/Editor/2022.3.10f1/PlaybackEngines/WebGLSupport/BuildTools'\"  \"locals.inputPath='/Applications/Unity/Hub/Editor/2022.3.10f1/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/index.html'\"  \"locals.outputPath='/Users/bunchou/Documents/Unity/obstacle game\\x5f01\\x5fStart/WebGL\\x5fBuild/index.html'\"  \"locals.webglIncludes='/Applications/Unity/Hub/Editor/2022.3.10f1/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/WebGLIncludes'\"  \"locals.minifyOutput=false\"  \"COMPANY_NAME='DefaultCompany'\" \"PRODUCT_NAME='obstacle game\\x5f01\\x5fStart'\" \"PRODUCT_VERSION='0.1'\" \"WIDTH=960\" \"HEIGHT=600\" \"SPLASH_SCREEN_STYLE='Dark'\" \"BACKGROUND_COLOR='\\x23231F20'\" \"DATA_FILENAME='WebGL\\x5fBuild.data.unityweb'\" \"FRAMEWORK_FILENAME='WebGL\\x5fBuild.framework.js.unityweb'\" \"WORKER_FILENAME=''\" \"CODE_FILENAME='WebGL\\x5fBuild.wasm.unityweb'\" \"MEMORY_FILENAME=''\" \"SYMBOLS_FILENAME=''\" \"BACKGROUND_FILENAME=''\" \"USE_WASM=true\" \"USE_THREADS=false\" \"USE_WEBGL_1_0=false\" \"USE_WEBGL_2_0=true\" \"WEBGL_POWER_PREFERENCE=2\" \"USE_DATA_CACHING=true\" \"DECOMPRESSION_FALLBACK='Gzip'\" \"DEVELOPMENT_PLAYER=false\" \"UNITY_VERSION='2022.3.10f1'\" \"SHOW_DIAGNOSTICS=false\" \"CLOSE_ON_QUIT=false\" \"LOADER_FILENAME='WebGL\\x5fBuild.loader.js'\"",
+      "Action": "cd \"/Applications/Unity/Hub/Editor/2022.3.10f1/PlaybackEngines/WebGLSupport/BuildTools\" && \"/Applications/Unity/Hub/Editor/2022.3.10f1/PlaybackEngines/WebGLSupport/BuildTools/Emscripten/node/node\" \"/Applications/Unity/Hub/Editor/2022.3.10f1/PlaybackEngines/WebGLSupport/BuildTools/Preprocess.js\"  \"locals.cwd='/Applications/Unity/Hub/Editor/2022.3.10f1/PlaybackEngines/WebGLSupport/BuildTools'\"  \"locals.inputPath='/Users/bunchou/Documents/Unity/obstacle game\\x5f01\\x5fStart/Assets/WebGLTemplates/NewTemplates/index.html'\"  \"locals.outputPath='/Users/bunchou/Documents/Unity/obstacle game\\x5f01\\x5fStart/WebGL\\x5fBuild/index.html'\"  \"locals.webglIncludes='/Applications/Unity/Hub/Editor/2022.3.10f1/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/WebGLIncludes'\"  \"locals.minifyOutput=false\"  \"COMPANY_NAME='DefaultCompany'\" \"PRODUCT_NAME='obstacle game\\x5f01\\x5fStart'\" \"PRODUCT_VERSION='0.1'\" \"WIDTH=400\" \"HEIGHT=250\" \"SPLASH_SCREEN_STYLE='Dark'\" \"BACKGROUND_COLOR='\\x23231F20'\" \"DATA_FILENAME='WebGL\\x5fBuild.data.unityweb'\" \"FRAMEWORK_FILENAME='WebGL\\x5fBuild.framework.js.unityweb'\" \"WORKER_FILENAME=''\" \"CODE_FILENAME='WebGL\\x5fBuild.wasm.unityweb'\" \"MEMORY_FILENAME=''\" \"SYMBOLS_FILENAME=''\" \"BACKGROUND_FILENAME=''\" \"USE_WASM=true\" \"USE_THREADS=false\" \"USE_WEBGL_1_0=false\" \"USE_WEBGL_2_0=true\" \"WEBGL_POWER_PREFERENCE=2\" \"USE_DATA_CACHING=true\" \"DECOMPRESSION_FALLBACK='Gzip'\" \"DEVELOPMENT_PLAYER=false\" \"UNITY_VERSION='2022.3.10f1'\" \"SHOW_DIAGNOSTICS=false\" \"CLOSE_ON_QUIT=false\" \"PRODUCT_DESCRIPTION=''\" \"LOADER_FILENAME='WebGL\\x5fBuild.loader.js'\"",
       "Inputs": [
-        "/Applications/Unity/Hub/Editor/2022.3.10f1/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/index.html"
+        "/Users/bunchou/Documents/Unity/obstacle game_01_Start/Assets/WebGLTemplates/NewTemplates/index.html"
       ],
       "Outputs": [
         "WebGL_Build/index.html"
       ],
       "AllowUnexpectedOutput": true,
       "Env": [],
-      "DebugActionIndex": 307
+      "DebugActionIndex": 308
     },
     {
       "Annotation": "CopyFiles WebGL_Build/TemplateData/favicon.ico",
       "DisplayName": "Copying favicon.ico",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "/Applications/Unity/Hub/Editor/2022.3.10f1/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/favicon.ico"
+        "/Users/bunchou/Documents/Unity/obstacle game_01_Start/Assets/WebGLTemplates/NewTemplates/TemplateData/favicon.ico"
       ],
       "Outputs": [
         "WebGL_Build/TemplateData/favicon.ico"
       ],
-      "DebugActionIndex": 308
+      "DebugActionIndex": 309
     },
     {
       "Annotation": "CopyFiles WebGL_Build/TemplateData/fullscreen-button.png",
       "DisplayName": "Copying fullscreen-button.png",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "/Applications/Unity/Hub/Editor/2022.3.10f1/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/fullscreen-button.png"
+        "/Users/bunchou/Documents/Unity/obstacle game_01_Start/Assets/WebGLTemplates/NewTemplates/TemplateData/fullscreen-button.png"
       ],
       "Outputs": [
         "WebGL_Build/TemplateData/fullscreen-button.png"
       ],
-      "DebugActionIndex": 309
+      "DebugActionIndex": 310
     },
     {
       "Annotation": "CopyFiles WebGL_Build/TemplateData/MemoryProfiler.png",
       "DisplayName": "Copying MemoryProfiler.png",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "/Applications/Unity/Hub/Editor/2022.3.10f1/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/MemoryProfiler.png"
+        "/Users/bunchou/Documents/Unity/obstacle game_01_Start/Assets/WebGLTemplates/NewTemplates/TemplateData/MemoryProfiler.png"
       ],
       "Outputs": [
         "WebGL_Build/TemplateData/MemoryProfiler.png"
       ],
-      "DebugActionIndex": 310
+      "DebugActionIndex": 311
     },
     {
       "Annotation": "CopyFiles WebGL_Build/TemplateData/progress-bar-empty-dark.png",
       "DisplayName": "Copying progress-bar-empty-dark.png",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "/Applications/Unity/Hub/Editor/2022.3.10f1/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/progress-bar-empty-dark.png"
+        "/Users/bunchou/Documents/Unity/obstacle game_01_Start/Assets/WebGLTemplates/NewTemplates/TemplateData/progress-bar-empty-dark.png"
       ],
       "Outputs": [
         "WebGL_Build/TemplateData/progress-bar-empty-dark.png"
       ],
-      "DebugActionIndex": 311
+      "DebugActionIndex": 312
     },
     {
       "Annotation": "CopyFiles WebGL_Build/TemplateData/progress-bar-empty-light.png",
       "DisplayName": "Copying progress-bar-empty-light.png",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "/Applications/Unity/Hub/Editor/2022.3.10f1/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/progress-bar-empty-light.png"
+        "/Users/bunchou/Documents/Unity/obstacle game_01_Start/Assets/WebGLTemplates/NewTemplates/TemplateData/progress-bar-empty-light.png"
       ],
       "Outputs": [
         "WebGL_Build/TemplateData/progress-bar-empty-light.png"
       ],
-      "DebugActionIndex": 312
+      "DebugActionIndex": 313
     },
     {
       "Annotation": "CopyFiles WebGL_Build/TemplateData/progress-bar-full-dark.png",
       "DisplayName": "Copying progress-bar-full-dark.png",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "/Applications/Unity/Hub/Editor/2022.3.10f1/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/progress-bar-full-dark.png"
+        "/Users/bunchou/Documents/Unity/obstacle game_01_Start/Assets/WebGLTemplates/NewTemplates/TemplateData/progress-bar-full-dark.png"
       ],
       "Outputs": [
         "WebGL_Build/TemplateData/progress-bar-full-dark.png"
       ],
-      "DebugActionIndex": 313
+      "DebugActionIndex": 314
     },
     {
       "Annotation": "CopyFiles WebGL_Build/TemplateData/progress-bar-full-light.png",
       "DisplayName": "Copying progress-bar-full-light.png",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "/Applications/Unity/Hub/Editor/2022.3.10f1/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/progress-bar-full-light.png"
+        "/Users/bunchou/Documents/Unity/obstacle game_01_Start/Assets/WebGLTemplates/NewTemplates/TemplateData/progress-bar-full-light.png"
       ],
       "Outputs": [
         "WebGL_Build/TemplateData/progress-bar-full-light.png"
       ],
-      "DebugActionIndex": 314
+      "DebugActionIndex": 315
     },
     {
       "Annotation": "PreprocessJS WebGL_Build/TemplateData/style.css",
       "DisplayName": "PreprocessJS style",
-      "Action": "cd \"/Applications/Unity/Hub/Editor/2022.3.10f1/PlaybackEngines/WebGLSupport/BuildTools\" && \"/Applications/Unity/Hub/Editor/2022.3.10f1/PlaybackEngines/WebGLSupport/BuildTools/Emscripten/node/node\" \"/Applications/Unity/Hub/Editor/2022.3.10f1/PlaybackEngines/WebGLSupport/BuildTools/Preprocess.js\"  \"locals.cwd='/Applications/Unity/Hub/Editor/2022.3.10f1/PlaybackEngines/WebGLSupport/BuildTools'\"  \"locals.inputPath='/Applications/Unity/Hub/Editor/2022.3.10f1/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/style.css'\"  \"locals.outputPath='/Users/bunchou/Documents/Unity/obstacle game\\x5f01\\x5fStart/WebGL\\x5fBuild/TemplateData/style.css'\"  \"locals.webglIncludes='/Applications/Unity/Hub/Editor/2022.3.10f1/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/WebGLIncludes'\"  \"locals.minifyOutput=false\"  \"COMPANY_NAME='DefaultCompany'\" \"PRODUCT_NAME='obstacle game\\x5f01\\x5fStart'\" \"PRODUCT_VERSION='0.1'\" \"WIDTH=960\" \"HEIGHT=600\" \"SPLASH_SCREEN_STYLE='Dark'\" \"BACKGROUND_COLOR='\\x23231F20'\" \"DATA_FILENAME='WebGL\\x5fBuild.data.unityweb'\" \"FRAMEWORK_FILENAME='WebGL\\x5fBuild.framework.js.unityweb'\" \"WORKER_FILENAME=''\" \"CODE_FILENAME='WebGL\\x5fBuild.wasm.unityweb'\" \"MEMORY_FILENAME=''\" \"SYMBOLS_FILENAME=''\" \"BACKGROUND_FILENAME=''\" \"USE_WASM=true\" \"USE_THREADS=false\" \"USE_WEBGL_1_0=false\" \"USE_WEBGL_2_0=true\" \"WEBGL_POWER_PREFERENCE=2\" \"USE_DATA_CACHING=true\" \"DECOMPRESSION_FALLBACK='Gzip'\" \"DEVELOPMENT_PLAYER=false\" \"UNITY_VERSION='2022.3.10f1'\" \"SHOW_DIAGNOSTICS=false\" \"CLOSE_ON_QUIT=false\" \"LOADER_FILENAME='WebGL\\x5fBuild.loader.js'\"",
+      "Action": "cd \"/Applications/Unity/Hub/Editor/2022.3.10f1/PlaybackEngines/WebGLSupport/BuildTools\" && \"/Applications/Unity/Hub/Editor/2022.3.10f1/PlaybackEngines/WebGLSupport/BuildTools/Emscripten/node/node\" \"/Applications/Unity/Hub/Editor/2022.3.10f1/PlaybackEngines/WebGLSupport/BuildTools/Preprocess.js\"  \"locals.cwd='/Applications/Unity/Hub/Editor/2022.3.10f1/PlaybackEngines/WebGLSupport/BuildTools'\"  \"locals.inputPath='/Users/bunchou/Documents/Unity/obstacle game\\x5f01\\x5fStart/Assets/WebGLTemplates/NewTemplates/TemplateData/style.css'\"  \"locals.outputPath='/Users/bunchou/Documents/Unity/obstacle game\\x5f01\\x5fStart/WebGL\\x5fBuild/TemplateData/style.css'\"  \"locals.webglIncludes='/Applications/Unity/Hub/Editor/2022.3.10f1/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/WebGLIncludes'\"  \"locals.minifyOutput=false\"  \"COMPANY_NAME='DefaultCompany'\" \"PRODUCT_NAME='obstacle game\\x5f01\\x5fStart'\" \"PRODUCT_VERSION='0.1'\" \"WIDTH=400\" \"HEIGHT=250\" \"SPLASH_SCREEN_STYLE='Dark'\" \"BACKGROUND_COLOR='\\x23231F20'\" \"DATA_FILENAME='WebGL\\x5fBuild.data.unityweb'\" \"FRAMEWORK_FILENAME='WebGL\\x5fBuild.framework.js.unityweb'\" \"WORKER_FILENAME=''\" \"CODE_FILENAME='WebGL\\x5fBuild.wasm.unityweb'\" \"MEMORY_FILENAME=''\" \"SYMBOLS_FILENAME=''\" \"BACKGROUND_FILENAME=''\" \"USE_WASM=true\" \"USE_THREADS=false\" \"USE_WEBGL_1_0=false\" \"USE_WEBGL_2_0=true\" \"WEBGL_POWER_PREFERENCE=2\" \"USE_DATA_CACHING=true\" \"DECOMPRESSION_FALLBACK='Gzip'\" \"DEVELOPMENT_PLAYER=false\" \"UNITY_VERSION='2022.3.10f1'\" \"SHOW_DIAGNOSTICS=false\" \"CLOSE_ON_QUIT=false\" \"PRODUCT_DESCRIPTION=''\" \"LOADER_FILENAME='WebGL\\x5fBuild.loader.js'\"",
       "Inputs": [
-        "/Applications/Unity/Hub/Editor/2022.3.10f1/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/style.css"
+        "/Users/bunchou/Documents/Unity/obstacle game_01_Start/Assets/WebGLTemplates/NewTemplates/TemplateData/style.css"
       ],
       "Outputs": [
         "WebGL_Build/TemplateData/style.css"
       ],
       "AllowUnexpectedOutput": true,
       "Env": [],
-      "DebugActionIndex": 315
+      "DebugActionIndex": 316
     },
     {
       "Annotation": "CopyFiles WebGL_Build/TemplateData/unity-logo-dark.png",
       "DisplayName": "Copying unity-logo-dark.png",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "/Applications/Unity/Hub/Editor/2022.3.10f1/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/unity-logo-dark.png"
+        "/Users/bunchou/Documents/Unity/obstacle game_01_Start/Assets/WebGLTemplates/NewTemplates/TemplateData/unity-logo-dark.png"
       ],
       "Outputs": [
         "WebGL_Build/TemplateData/unity-logo-dark.png"
       ],
-      "DebugActionIndex": 316
+      "DebugActionIndex": 317
     },
     {
       "Annotation": "CopyFiles WebGL_Build/TemplateData/unity-logo-light.png",
       "DisplayName": "Copying unity-logo-light.png",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "/Applications/Unity/Hub/Editor/2022.3.10f1/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/unity-logo-light.png"
+        "/Users/bunchou/Documents/Unity/obstacle game_01_Start/Assets/WebGLTemplates/NewTemplates/TemplateData/unity-logo-light.png"
       ],
       "Outputs": [
         "WebGL_Build/TemplateData/unity-logo-light.png"
       ],
-      "DebugActionIndex": 317
+      "DebugActionIndex": 318
     },
     {
       "Annotation": "CopyFiles WebGL_Build/TemplateData/webgl-logo.png",
       "DisplayName": "Copying webgl-logo.png",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "/Applications/Unity/Hub/Editor/2022.3.10f1/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/webgl-logo.png"
+        "/Users/bunchou/Documents/Unity/obstacle game_01_Start/Assets/WebGLTemplates/NewTemplates/TemplateData/webgl-logo.png"
       ],
       "Outputs": [
         "WebGL_Build/TemplateData/webgl-logo.png"
       ],
-      "DebugActionIndex": 318
+      "DebugActionIndex": 319
     },
     {
       "Annotation": "CopyFiles WebGL_Build/TemplateData/webmemd-icon.png",
       "DisplayName": "Copying webmemd-icon.png",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "/Applications/Unity/Hub/Editor/2022.3.10f1/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/webmemd-icon.png"
+        "/Users/bunchou/Documents/Unity/obstacle game_01_Start/Assets/WebGLTemplates/NewTemplates/TemplateData/webmemd-icon.png"
       ],
       "Outputs": [
         "WebGL_Build/TemplateData/webmemd-icon.png"
       ],
-      "DebugActionIndex": 319
+      "DebugActionIndex": 320
     },
     {
       "Annotation": "Player",
@@ -14188,10 +14201,11 @@
         316,
         317,
         318,
-        319
+        319,
+        320
       ],
       "OverwriteOutputs": false,
-      "DebugActionIndex": 320
+      "DebugActionIndex": 321
     }
   ],
   "FileSignatures": [
@@ -14366,10 +14380,6 @@
       "Filter": "*.js"
     },
     {
-      "Path": "/Applications/Unity/Hub/Editor/2022.3.10f1/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default",
-      "Recurse": 1
-    },
-    {
       "Path": "/Applications/Unity/Hub/Editor/2022.3.10f1/Unity.app/Contents/il2cpp/build/deploy"
     },
     {
@@ -14513,6 +14523,10 @@
       "Path": "/Applications/Unity/Hub/Editor/2022.3.10f1/Unity.app/Contents/Tools/BuildPipeline"
     },
     {
+      "Path": "/Users/bunchou/Documents/Unity/obstacle game_01_Start/Assets/WebGLTemplates/NewTemplates",
+      "Recurse": 1
+    },
+    {
       "Path": "Assets/StreamingAssets",
       "Recurse": 1
     },
@@ -14559,7 +14573,7 @@
   ],
         "NamedNodes": {
           "all_tundra_nodes": 0,
-          "Player": 320
+          "Player": 321
         }
 ,  "DefaultNodes": [
     0
