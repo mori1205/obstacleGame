@@ -26,7 +26,7 @@
     <button id="start" onclick="init()">Start</button>
 
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=400 height=250 tabindex="-1"></canvas>
+      <canvas id="unity-canvas" width=960 height=800 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -112,8 +112,8 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "400px";
-        canvas.style.height = "250px";
+        canvas.style.width = "960px";
+        canvas.style.height = "800px";
       }
 
       loadingBar.style.display = "block";
@@ -171,6 +171,11 @@
         motor01.power(100); // 25
         motor02.power(100);
 
+        button.onchange = function (pressed) {
+          if (pressed) {
+            gameInstance.SendMessage('unitychan_dynamic', 'PerformJump');
+          }
+        };
         obniz.display.clear();
         obniz.display.print("patipatiDrop");
       };
