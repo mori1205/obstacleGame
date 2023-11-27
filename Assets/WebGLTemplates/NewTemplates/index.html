@@ -268,6 +268,7 @@
           if (flag == true) {
             setTimeout(function () {
               if (average >= 0.99) {
+                console.log("eyeditection 前");
                 eyedetection();
                 average = 0;
               } else {
@@ -322,7 +323,7 @@
       function eyedetection() { //点眼する
 
         if (isMoterMoving == false) {
-          // console.log("eyedetect");
+          console.log("eyedetect");
           motor01.forward();
           motor02.forward();
           isMoterMoving = true;
