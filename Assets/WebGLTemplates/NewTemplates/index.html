@@ -192,8 +192,8 @@
       // var data = []; //openクラスの値を入れる
       var obniz = new Obniz("");
       var isMoterMoving = false; //モーターを動かさない
-      var flag = false; //フラグ
-      // var youtubeVideoID = "oelvJxZnWtc";
+      // var flag = false; //フラグ
+      // var go_sec_Count = 0;
 
       const bufferSize = 20; // バッファのサイズ
       const ringBuffer = new Array(bufferSize).fill(0);  // 初期化
@@ -265,17 +265,17 @@
           average = open_sum / bufferSize; //平均
 
           // console.log("平均:" + average);
-          if (flag == true) {
-            setTimeout(function () {
-              if (average >= 0.99) {
-                console.log("eyeditection 前");
-                eyedetection();
-                average = 0;
-              } else {
-                average = 0;
-              }
-            }, go_sec);
-          }
+          // if (e) {
+          setTimeout(function () {
+            if (average >= 0.99) {
+              console.log("eyeditection 前");
+              eyedetection();
+              average = 0;
+            } else {
+              average = 0;
+            }
+          }, go_sec);
+          // }
         }
         setInterval(timer, 100);
       }
