@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Score
   - Coin
+  - obstacle
   layers:
   - Default
   - TransparentFX

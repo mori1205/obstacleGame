@@ -14,7 +14,6 @@
     <div id="label-container"></div>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
-    <script src = "https://mori1205.github.io/obstacleGame/WebGL_Build/index.html"></script>
     
 
 #if SHOW_DIAGNOSTICS
@@ -49,7 +48,7 @@
     </div>
     <script>
 
-// ***************触らない*********************************************************
+// ***************************************触らない*********************************************************
       var container = document.querySelector("#unity-container");
       var canvas = document.querySelector("#unity-canvas");
       var loadingBar = document.querySelector("#unity-loading-bar");
@@ -175,13 +174,7 @@
 
       document.body.appendChild(script);
       // *********************************************************************************
-      // var gameInstance;
-      function onClick() {
-      // UnityのPlayer GameObjectにアタッチされたスクリプトのStartJumpメソッドを呼び出す
-        gameInstance.SendMessage('unitychan_dynamic', 'PerformJump');
-      }
 
-      // TM実装
       let model, webcam, labelContainer, maxPredictions;
       var motor01;
       var motor02;
@@ -190,16 +183,16 @@
       var count = 0; //一定時間に目を開いた回数
       let average = 0; //目を開いた確率
       // var data = []; //openクラスの値を入れる
-      var obniz = new Obniz("");
+      var obniz = new Obniz("4950-9121");
       var isMoterMoving = false; //モーターを動かさない
-      // var flag = false; //フラグ
-      // var go_sec_Count = 0;
+      var go_sec_Count = 0;
 
       const bufferSize = 20; // バッファのサイズ
       const ringBuffer = new Array(bufferSize).fill(0);  // 初期化
       let currentIndex = 0; // 現在のインデックス
       var go_sec = Math.floor(Math.random() * (21 - 11) + 10) * 1000; //秒数
 
+   
       obniz.onconnect = async function () {
         button = obniz.wired("Button", { signal: 0, gnd: 2 });
         motor01 = obniz.wired("DCMotor", { forward: 4, back: 6 });
@@ -209,9 +202,14 @@
 
         button.onchange = function (pressed) {
           if (pressed) {
-            gameInstance.SendMessage('unitychan_dynamic', 'PerformJump');
+           
+            gameInstance.SendMessage('Player', 'PerformJump');
+          } else {
+            
+            gameInstance.SendMessage('Player', 'StopJump');
           }
         };
+
         obniz.display.clear();
         obniz.display.print("patipatiDrop");
       };
@@ -222,12 +220,14 @@
       // the link to your model provided by Teachable Machine export panel
       const URL_ = "https://teachablemachine.withgoogle.com/models/GMnymkaDG/";
 
+      window.onload = function() {
+        setTimeout(init, 10000);
+        
+      };
+
       // Load the image model and setup the webcam
       async function init() {
-        // // カスケードレイヤー
-        // var contentDiv = document.getElementById('contentDiv');
-        // contentDiv.classList.toggle('hidden');
-        // contentDiv.classList.toggle('visible');
+        // console.log("init呼び出し"); 
 
         const modelURL = URL_ + "model.json";
         const metadataURL = URL_ + "metadata.json";
@@ -265,17 +265,18 @@
           average = open_sum / bufferSize; //平均
 
           // console.log("平均:" + average);
-          // if (e) {
-          setTimeout(function () {
-            if (average >= 0.99) {
-              console.log("eyeditection 前");
-              eyedetection();
-              average = 0;
-            } else {
-              average = 0;
-            }
-          }, go_sec);
-          // }
+          if (go_sec_Count == 0) {
+            setTimeout(function () {
+              if (average >= 0.99) {
+                // console.log("eyeditection 前");
+                eyedetection();
+                average = 0;
+              } else {
+                average = 0;
+              }
+              go_sec_Count = 1;
+            }, go_sec);
+          }
         }
         setInterval(timer, 100);
       }
@@ -323,7 +324,6 @@
       function eyedetection() { //点眼する
 
         if (isMoterMoving == false) {
-          console.log("eyedetect");
           motor01.forward();
           motor02.forward();
           isMoterMoving = true;
@@ -331,8 +331,7 @@
             motor01.stop();
             motor02.stop();
             webcam.stop();
-            // isMoterMoving = false;
-        
+            isMoterMoving = false;
           }, 1800);
         }
       }

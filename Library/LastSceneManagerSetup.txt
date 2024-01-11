@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/obstacleScene.unity
+- path: Assets/Scenes/obstacle_reward.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

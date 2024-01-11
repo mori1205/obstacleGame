@@ -5,14 +5,12 @@ using UnityEngine;
 
 public class UseJavaScriptLib : MonoBehaviour
 {
-	[DllImport("__Internal")]
+  [DllImport("__Internal")]
   private static extern void Hello();
-	// [DllImport("__Internal")]
-	// private static extern void SyncFile();
 
-	// Start is called before the first frame update
-	void Start()
-	{
-		Hello();
-	}
+  // Start is called before the first frame update
+  void Start()
+  {
+    Hello();
+  }
 }

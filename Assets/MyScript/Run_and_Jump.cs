@@ -17,7 +17,7 @@ public class Run_and_Jump : MonoBehaviour
   void Start()
   {
     animator = GetComponent<Animator>();
-    // animator.SetBool("isRun", true); // 初期状態を走りに設定
+    animator.SetBool("isRun", true); // 初期状態を走りに設定
   }
 
   // Update is called once per frame

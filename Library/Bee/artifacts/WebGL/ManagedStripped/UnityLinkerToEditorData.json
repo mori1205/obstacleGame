@@ -630,6 +630,14 @@
             "icon": null
           },
           {
+            "name": "CharacterController",
+            "scenes": [
+              "Assets/Scenes/obstacleScene.unity"
+            ],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
             "name": "Collider",
             "scenes": [],
             "dependencyType": 1,
